@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a la robótica ph</title>
+    <link rel="icon" href="Recursos/img/LOGO_CAPOUILLIEZ - Isotipos rojo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        html, body{
+            height: 100%;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #e0e0e0;
+            background-color: #1a1a2e; /* El fondo oscuro que tenías */
+        }
+
+        header {
+            padding: 40px;
+            background: linear-gradient(135deg, rgb(84, 19, 104) 0%, rgb(40, 10, 60) 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        body{
+            background-color: #f8f7ff;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        header{
+            padding: 40px;
+            background: linear-gradient(135deg, rgb(84, 19, 104) 0%, rgb(40, 10, 60) 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        header h1 {
+        color: #fff;
+            text-shadow: 
+                0 0 7px #fff,
+                0 0 10px #ff79c6,
+                0 0 21px #ff79c6,
+                0 0 42px #ff79c6;
+            font-size: 2.5rem; 
+            margin: 0;
+    }
+        main{
+            flex: 1;
+            padding: 20px;
+            max-width: 95%;
+            margin: 0 auto;
+        }
+        footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            border-top: 1px solid rgb(9, 30, 134);
+            background-color: rgb(89, 14, 104);
+        }
+        footer img {
+            transition: transform 0.3s ease; 
+            cursor: pointer;
+        }
+
+        footer img:hover {
+            transform: scale(1.1); 
+        }
+        .semana {
+            background: rgba(255, 255, 255, 0.05); /* Transparencia sutil */
+            backdrop-filter: blur(10px); /* Desenfoque de fondo */
+            border: 1px solid rgba(255, 255, 255, 0.1); /* Borde fino de cristal */
+            border-left: 8px solid #ff79c6; /* El rosa neón que ya tienes */
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+            transition: all 0.3s ease;
+            animation: fadeInUp 0.8s ease-out;
+            width: 95vw; 
+            margin-left: calc(-47.5vw + 50%);
+            }
+
+        .semana:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+@keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .semana {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .semana h3:hover::after {
+            content: ' ✨';
+            font-size: 1.2rem;
+        }
+
+        /* Modo oscuro automático */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #1a1a2e;
+                color: #e0e0e0;
+            }
+            .semana {
+                background-color: #16213e;
+                color: white;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            }
+            .semana h3 {
+                color: #ff79c6;
+            }
+        }
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a1a2e; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgb(84, 19, 104);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ff79c6; 
+        }
+        </style>
+
+    
+</head>
+<body>
+<header>
+    <h1>Introducción a la Robótica</h1>
+</header>
+<main>
+    <div class="semana">
+        <h3>iNTRODUCCIÓN AL ARDUINO</h3>
+        <p>Semana 1</p>
+        <iframe src="c:\Users\Alumno Capouilliez\Downloads\Introducción Arduino (4).pdf" width="100%" height="500px" style="border-radius: 10px; border: none;"></iframe>
+    </div>
+
+    <div class="semana">
+        <h3>Semana 1: Introducción</h3>
+        <p>Aquí puedes escribir todo lo que aprendiste en la primera semana.</p>
+    </div>
+
+    <div class="semana">
+        <h3>Semana 2: Desarrollo de Proyectos</h3>
+        <p>Contenido de la segunda semana.</p>
+    </div>
+
+    <div class="semana 7">
+    <h3>Mi Grabación de circuito</h3>
+    <p>Aquí te muestro el progreso de mi proyecto:</p>
+    <video width="90%" controls style="border-radius: 10px; box-shadow: 0 0 15px rgba(255, 121, 198, 0.3);">
+        <source src="c:\Users\Alumno Capouilliez\Documents\Rivera_11F\Video de tinkercard.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de videos.
+    </video>
+</div>
+</main>
+<footer>
+    <span>@sophiaarm_</span>
+    <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" height="100" width="300">
+
+
+</footer>    
+</body>
+</html>
